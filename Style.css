@@ -1,0 +1,70 @@
+html { box-sizing: border-box;
+    box-sizing: inherit;
+}
+body {  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100%;
+    background-color: lemonchiffon;
+    margin: 0;
+}
+/*link styles*/
+
+/*header styles*/
+        img {
+            float: right;
+            margin: 0 12px;
+        }
+/*nav styles*/
+nav, footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #cfb20a;
+  }
+  nav ul li a:link, nav ul li a:visited {
+    color: black;
+  }
+  nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    color: #fff;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+  }
+  nav ul li {
+     font-size: .8em;
+    letter-spacing: .2em;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li a {
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+  }
+/*main styles*/
+h1 { font-size: 3em;
+    color: black;
+    text-align: center; 
+    background: url(Photo-coding.jpg)   
+}
+h2 {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+        font-size: 2em;
+        text-transform: uppercase;
+               letter-spacing: .7em;
+           color: black;
+} 
+p {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: initial;
+            color: black;
+        }
+    label{
+font-weight: bold;
+font-style: initial;
+        }
+/*aside style*/
+
+/*misc style*/
