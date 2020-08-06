@@ -9,10 +9,7 @@ body {  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lu
 /*link styles*/
 
 /*header styles*/
-        img {
-            float: right;
-            margin: 0 12px;
-        }
+
 /*nav styles*/
 nav, footer {
     font-family: Georgia, 'Times New Roman', Times, serif;

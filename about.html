@@ -9,8 +9,11 @@
         main{
             margin-left: 5%;
         }
-        img{
-            margin-right: 45%;
+        img {
+            float: right;
+            margin: 0 45%;
+            width: 400px;
+            height: 300px
         }
     </style>
 </head>
@@ -26,8 +29,6 @@
                     <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a></li>
                     <li class="nav-link">
                     <a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-link">
-                    <a class="nav-link" href="login.html">Login/Sign in</a></li>
                 </ul>
             </nav>
         </header>
@@ -36,16 +37,36 @@
 <p>There are times you wish you remenbered moments of your life
 <blockquote>With Remembrance you won't have to worry about forgetting those moments in life</blockquote></p>
 <p>With Remembrance you will be able to put pictures to this website and the date so you can search by date
-    or year where you can find photes you put.</p>
-
+    or year where you can find photes you put in.</p>
+    <form>
 <p><input type="file" value="insert picture"><input type="date" value="insert date">
     <input type="submit" value="submit">
+    </form>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("form").submit(function(event){
+                event.preventDefault()
+                alert(".submitted");
+                var selector = $( "select#FormControlSelect1 option:signed in" ).val();
+
+        document.getElementBytype("file").addEventListener("click", displayName);
+
+    function displayName() {
+    var file = "file";
+    var DateOfPhoto = new Date().toLocaleDateString();
+    var textString = "The name of the webstie is " + file + "!<br> Today is " + DateOfPhoto;
+    document.getElementBytype("file").innerFILE = textString;
+}
+        })
+        });
+    </script>
     <h3>Example</h3>
     <div class="row">
-        <div class="col-md-3"><p><img src="Photo coding.jpg" alt="Family in a beach having fun"></p></div>March 22nd 2020<br><br><br><br><br><br><br><br>
-        <div class="col-md-3"><p><img src="family photo 1.png" alt="Family in a beach having fun"></p></div>September 13th 2019<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="col-md-3"><p><img src="family photo 2.jpg" alt="Family in a beach having fun"></p></div>July 18th 2017<br>
-        <div class="col-md-3"><p><img src="family photo 3.jpg" alt="Family in a beach having fun"></p></div>July 18th 2005<br>
+        <div class="col-md-3"><p><img src="Photo coding.jpg" alt="Family in a beach having fun"></p></div>March 22nd 2020
+        <div class="col-md-3"><p><img src="family photo 1.png" alt="Family in a beach having fun"></p></div>September 13th 2019
+        <div class="col-md-3"><p><img src="family photo 2.jpg" alt="Picture of a family in old clothes"></p></div>July 18th 2017
+        <div class="col-md-3"><p><img src="family photo 3.jpg" alt="Picture of a family in the grass"></p></div>July 18th 2005
     </main>
 </body>
 </html>
