@@ -9,6 +9,12 @@
         p{
             margin-left: 5%;
         }
+        img {
+            float: right;
+            margin: 0 12px;
+            width: 400px;
+            height: 300px
+        }
     </style>
 </head>
 
@@ -23,16 +29,33 @@
                     <a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-link">
                     <a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-link">
-                    <a class="nav-link" href="login.html">Login/Sign in</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <p><img src="Photo coding.jpg" alt="Family in a beach having fun"></p>
+            <p><img src="Photo coding.jpg" alt="Family having fun"></p>
             <h1>Remembrance</h1>
             <p>Hello welcome to Remembrance, the place where you can revive your favorite moments or your live with photos and videos</p><br>
-            <p>Here you can go through our pages and learn more about Remenbrance and if you have any qeustions go to the contact page and contact me through there</p>
+            <p>Here you can go through our pages and learn more about Remenbrance and if you have any qeustions go to the contact page and contact me through there</p><br>
+            <p>You can also look at the about page where you can see how this website works</p><br>
+            <form>
+            <p>Login in<input type="email" value="insert email"><input type="password" value="password">
+                    <input type="button" onclick="window.location.href='about.html';" value="submit"></p><br><br>
+        </form>
+        <form>
+            <p>Sign in<input type="email" value="insert email"><input type="password" value="password">
+                    <input type="button" onclick="window.location.href='about.html';" value="submit"></p>    
+        </form>
         </main>
-</body>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("form").submit(function(event){
+                    event.preventDefault()
+                    alert(".submitted");
+                    var selector = $( "select#FormControlSelect1 option:signed in" ).val();
+            })
+            });
+        </script>
+
+    </body>
 </html>
